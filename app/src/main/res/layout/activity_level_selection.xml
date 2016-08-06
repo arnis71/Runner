@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:id="@+id/root_level"
+    tools:context="com.arnis.tt.activities.LevelSelection"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:visibility="invisible"
+        android:id="@+id/circular_reveal"
+        android:src="@drawable/ic_vector"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:id="@+id/upBar"
+        android:visibility="invisible"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:id="@+id/bar" />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/main_content"
+    android:layout_below="@id/bar">
+
+
+
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/player_at"
+        android:src="@drawable/player_icon" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:id="@+id/circle_column">
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/abc_btn_switch_to_on_mtrl_00012"
+            android:id="@+id/cricle_5"/>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/arrow_up"
+            android:layout_gravity="center"
+            android:id="@+id/arrow_5"
+            android:layout_below="@id/cricle_5"/>
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/abc_btn_switch_to_on_mtrl_00012"
+            android:id="@+id/cricle_4"
+            android:layout_below="@id/arrow_5"/>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/arrow_up"
+            android:layout_gravity="center"
+            android:id="@+id/arrow_4"
+            android:layout_below="@id/cricle_4"/>
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/abc_btn_switch_to_on_mtrl_00012"
+            android:id="@+id/cricle_3"
+            android:layout_below="@id/arrow_4"/>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/arrow_up"
+            android:layout_gravity="center"
+            android:id="@+id/arrow_3"
+            android:layout_below="@id/cricle_3"/>
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/abc_btn_switch_to_on_mtrl_00012"
+            android:id="@+id/cricle_2"
+            android:layout_below="@id/arrow_3"/>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/arrow_up"
+            android:layout_gravity="center"
+            android:id="@+id/arrow_2"
+            android:layout_below="@id/cricle_2"/>
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/abc_btn_switch_to_on_mtrl_00012"
+            android:id="@+id/cricle_1"
+            android:layout_below="@id/arrow_2"/>
+
+    </LinearLayout>
+</RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#03a9f4"
+        android:orientation="horizontal"
+        android:id="@+id/footer_country"
+        android:visibility="invisible"
+        android:layout_below="@id/main_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/arrow_down" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:text="hello"
+            android:id="@+id/footer_text"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

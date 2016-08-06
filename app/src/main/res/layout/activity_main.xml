@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.Game"
+    android:id="@+id/mainView"
+    android:orientation="vertical">
+
+
+
+
+    <android.support.v7.widget.GridLayout
+        xmlns:grid="http://schemas.android.com/apk/res-auto"
+        android:background="#ffe600"
+        android:id="@+id/grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+
+        grid:columnCount="11">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            grid:layout_columnWeight="1"
+            android:src="@drawable/fog_cell"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            grid:layout_columnWeight="1"
+            android:src="@drawable/fog_cell"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            grid:layout_columnWeight="1"
+            android:src="@drawable/fog_cell"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            grid:layout_columnWeight="1"
+            android:src="@drawable/fog_cell"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            grid:layout_columnWeight="1"
+            android:src="@drawable/fog_cell"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            grid:layout_columnWeight="1"
+            android:src="@drawable/fog_cell"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            grid:layout_columnWeight="1"
+            android:src="@drawable/fog_cell"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            grid:layout_columnWeight="1"
+            android:src="@drawable/fog_cell"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            grid:layout_columnWeight="1"
+            android:src="@drawable/fog_cell"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            grid:layout_columnWeight="1"
+            android:src="@drawable/fog_cell"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            grid:layout_columnWeight="1"
+            android:src="@drawable/fog_cell"/>
+
+
+    </android.support.v7.widget.GridLayout>
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/table">
+
+    </TableLayout>
+
+    <LinearLayout
+        android:background="#d500f9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/table">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="Level 1"
+            android:id="@+id/level"
+            android:layout_gravity="left"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/active_powerup" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bonus_field"
+            android:textSize="20sp"
+            android:text="0" />
+
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="b"
+            android:onClick="previewBombs"/>
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="p"
+            android:onClick="previewPowerups"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

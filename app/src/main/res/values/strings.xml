@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Tiny Tourist</string>
+    <integer name="com_vk_sdk_AppId">5544591</integer>
+    <string-array name="continents">
+        <item>EUROPE</item>
+        <item>ASIA</item>
+        <item>COMING SOON</item>
+    </string-array>
+
+    <string-array name="InEurope">
+        <item>France</item>
+        <item>Germany</item>
+        <item>Italy</item>
+        <item>Spain</item>
+        <item>Russia</item>
+        <item>Portugal</item>
+        <item>England</item>
+    </string-array>
+</resources>
